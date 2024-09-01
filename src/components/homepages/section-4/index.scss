@@ -1,0 +1,5 @@
+.d-flex.flex-column.gap-1 {
+    align-items: flex-start; /* این خط باعث می‌شود محتوا در داخل فلکس‌باکس به سمت چپ (برای RTL) تراز شود */
+    text-align: right; /* متون به سمت راست تراز شوند */
+  }
+  

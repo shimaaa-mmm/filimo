@@ -1,0 +1,90 @@
+.movie-img-wrapper {
+    position: relative;
+    // overflow: hidden;
+    border-radius: 8px; // Optional: Rounded corners
+    transition: opacity 0.3s ease; // Smooth transition for opacity change
+    margin-bottom: 9px; // Add margin to create spacing between rows
+  }
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin-left: -34px;
+  }
+  .movie-img-wrapper img {
+    border-radius: 8px; // Optional: Rounded corners for images
+    transition: opacity 0.3s ease; // Smooth transition for opacity change
+  }
+  
+  .movie-img-wrapper:hover img {
+    opacity: 0.7; // Darker opacity on hover
+  }
+  
+  .carousel-item {
+    transform: translate3d(0px, 0px, 0px); // Apply translate3d transform
+    transition-duration: 0ms; // No transition duration
+  }
+  
+  .row {
+    margin-left: -100px;
+    margin-right: -12px;
+  }
+  
+  .col-6, .col-md-4, .col-lg-2 {
+    padding-left: 9px; // Add left padding
+    padding-right: 9px; // Add right padding
+  }
+  
+  
+.movie-img-wrapper img {
+  border-radius: 10px; // Rounded corners for images
+  transition: transform 0.3s ease; // Smooth transition for scaling
+}
+
+.movie-img-wrapper.clicked {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  border: 2px solid rgba(255,255,255,.7);
+}
+
+.movie-img-wrapper.clicked img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  border: 2px solid rgba(255,255,255,.7);
+}
+
+.movie-img-wrapper {
+  margin: 8px 0 16px; // Margin for spacing
+}
+.movie-img-wrapper {
+    perspective: 1000px;
+    transition: transform 0.3s ease;
+  }
+  
+  .movie-img-wrapper img {
+    transform: rotateY(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .movie-img-wrapper:hover img {
+    transform: rotateY(10deg) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 22%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+  }

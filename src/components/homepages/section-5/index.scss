@@ -1,0 +1,41 @@
+.watch-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .image-section {
+    order: 1;
+  }
+  
+  .text-section {
+    order: 2;
+    text-align: right;
+  }
+  
+  @media (max-width: 768px) {
+    .watch-grid {
+      grid-template-columns: 1fr;
+    }
+    .image-section {
+      order: 2;
+    }
+    .text-section {
+      order: 1;
+      text-align: center;
+    }
+  }
+.image-section{
+    width: 785px;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  margin-right: -262px;
+
+}  
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin-left: -96px;
+}

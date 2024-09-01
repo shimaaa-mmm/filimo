@@ -1,0 +1,142 @@
+/* MovieSlider.css */
+.movie-image {
+    width: 72%;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    position: relative;
+    min-width: 130px;
+  }
+ /* index.scss */
+ 
+ 
+.movie-slider {
+    .carousel-inner {
+      .carousel-item {
+        .row {
+          display: flex;
+          overflow-x: auto;
+          align-items: center; // Align items vertically center]]
+          direction: rtl;
+          
+        }
+      }
+    }
+  .parents{
+    background-color: #343434;
+    margin-top: 10px;
+  }
+    .movie-image {
+      width: 190px; // Set the width of the images
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      position: relative;
+      min-width: 190px; // Ensure that images don't shrink below this width
+      margin-left: 20px; // Add left margin to create space between images
+  
+      // Add space between images
+      &:first-of-type {
+        margin-left: 0; // Remove left margin from the first image
+      }
+    }
+  
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.5); // Adjust the background color for better visibility
+      border-radius: 50%;
+      
+    }
+  
+    .movie-title {
+      margin-top: 10px; // Add some space above the title
+      font-size: 15px; // Adjust font size as needed
+      color: aquamarine;
+    }
+  
+  }
+  .parents {
+    // Ensure the container takes up the full width and height
+    width: 100%;
+    height: auto; // Adjust height as needed or set a specific value
+    background: -webkit-radial-gradient(41% 40%,130% 44%,rgba(0,0,0,0) 0,#151515 100%);
+  background: -moz-radial-gradient(41% 40%,130% 44%,rgba(0,0,0,0) 0,#151515 100%);
+  background: -o-radial-gradient(41% 40%,130% 44%,rgba(0,0,0,0) 0,#151515 100%);
+  background: radial-gradient(130% 44% at 41% 40%,rgba(0,0,0,0) 0,#151515 100%);
+  
+    
+    .container {
+      // Optional: Adjust padding or margins as needed
+      padding: 20px;
+    }
+  
+    .movie-slider {
+      // Set the background image and other styles
+      background: url('https://path-to-your-background-image.jpg') no-repeat center center;
+      background-size: cover; // Cover the entire container
+      padding: 20px; // Adjust padding as needed
+      border-radius: 10px; // Optional: Add rounded corners
+      margin-right: -66px;
+      margin-top: -41px;
+  
+      .slider-title {
+        // Align title to the right and set color to white
+        color: #fff;
+        text-align: right; // Align text to the right
+        margin-bottom: 20px; // Space between title and carousel
+        font-size: 1.5rem; // Adjust font size as needed
+      }
+  
+      .carousel-inner {
+        .carousel-item {
+          .row {
+            // Ensure items align properly and are centered
+            display: flex;
+            margin-left: 10px;
+
+          }
+          
+          .col-auto {
+            // Ensure images and titles are centered
+  
+            .movie-image {
+              border-radius: 5px; // Optional: Add rounded corners to images
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Optional: Add shadow to images
+            }
+  
+            .movie-title {
+              color: #fff; // Ensure the text is visible on the background
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+  
+      .carousel-control-prev, .carousel-control-next {
+        // Style the navigation buttons
+        filter: invert(100%); // Optional: Invert color to be visible on dark background
+      }
+    }
+  }
+  .movie-slider {
+    .slider-title {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  
+    .movie-image {
+      transition: opacity 0.3s ease; // Smooth transition for opacity change
+      opacity: 0.7; // Initial opacity (dark)
+      border-radius: 8px; // Optional: rounded corners
+    }
+  
+    .movie-image:hover {
+      opacity: 1; // Change opacity to full brightness on hover
+    }
+  
+    .movie-title {
+      margin-top: 0.5rem;
+      font-size: 0.9rem; // Optional: adjust font size
+    }
+  }
+  

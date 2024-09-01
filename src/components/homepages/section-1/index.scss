@@ -1,0 +1,43 @@
+.hero-section {
+    position: relative;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+  
+    // Radial Gradient Overlay
+    .radial-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: -webkit-radial-gradient(41% 40%,130% 44%,rgba(0,0,0,0) 0,#151515 100%);
+      background: -moz-radial-gradient(41% 40%,130% 44%,rgba(0,0,0,0) 0,#151515 100%);
+      background: -o-radial-gradient(41% 40%,130% 44%,rgba(0,0,0,0) 0,#151515 100%);
+      background: radial-gradient(130% 44% at 41% 40%,rgba(0,0,0,0) 0,#151515 100%);
+      z-index: 1;
+    }
+ 
+
+    // Linear Gradient Overlay
+    .linear-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: -webkit-linear-gradient(263.03deg,rgba(21,21,21,0) 5.45%,#151515 94.55%);
+      background: -moz-linear-gradient(263.03deg,rgba(21,21,21,0) 5.45%,#151515 94.55%);
+      background: -o-linear-gradient(263.03deg,rgba(21,21,21,0) 5.45%,#151515 94.55%);
+      background: linear-gradient(186.97deg,rgba(21,21,21,0) 5.45%,#151515 94.55%);
+      z-index: 2;
+    }
+  
+    // Ensure the content stays above overlays
+    .row {
+      position: relative;
+      z-index: 3;
+    }
+  }
+ 

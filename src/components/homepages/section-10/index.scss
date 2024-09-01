@@ -1,0 +1,110 @@
+.faq-container {
+  background-color: #121212;
+  color: white;
+  padding: 9rem;
+  border-radius: 10px;
+  margin-top: -67px;
+}
+
+.faq-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.faq-subtitle {
+  font-size: 1rem;
+  text-align: center;
+  color: #999;
+  margin-bottom: 1.5rem;
+}
+
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-item {
+  background-color: #1b1b1b;
+  border: 1px solid #333;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.plus-icon {
+  font-size: 1.2rem;
+  color: #f4843f;
+}
+
+.faq-answer {
+  color: #b6b6b6;
+  padding-top: 8px;
+  font-size: 12px;
+  direction: rtl;
+  line-height: 23px;
+  
+  
+}
+.faq-answer {
+  color: #b6b6b6;
+  padding-top: 8px;
+  font-size: 12px;
+  direction: rtl;
+  line-height: 23px;
+  font-weight: 400;
+  font-family: IRANSans;
+  font-size: 15px;
+  overflow: hidden; /* جلوگیری از نمایش ناگهانی محتوا */
+  max-height: 0; /* ارتفاع اولیه */
+  transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  opacity: 0; /* ابتدا پاسخ‌ها نامرئی هستند */
+}
+
+.faq-answer.active {
+  max-height: 500px; /* ارتفاع کافی برای پاسخ‌های طولانی‌تر */
+  opacity: 1; /* نمایش کامل پاسخ‌ها */
+  transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+
+.faq-question {
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  transition: color 0.3s ease; /* برای انیمیشن تغییر رنگ */
+}
+
+.faq-question.active {
+  color: orange; /* رنگ سوال در حالت فعال */
+}
+
+.faq-answer {
+  padding: 10px 0;
+  transition: max-height 0.3s ease;
+  font-weight: 400;
+  font-family: IRANSans;
+  font-size: 15px;
+
+}
+.highlight {
+  color: yellow;
+}
+.start{
+  text-align: right;
+  margin: 0 auto;
+  width: fit-content;
+  line-height: 23px;
+}

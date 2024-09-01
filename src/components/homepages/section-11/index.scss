@@ -1,0 +1,80 @@
+.heroo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+    direction: rtl;
+    height: 400px;
+    position: relative;
+    
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    z-index: 1;
+  }
+  
+  .hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .hero-features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 14px;
+    gap: 50px;
+    color: rgba(255,255,255,.75);
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    font-family: IRANSans;
+  }
+  
+  .check-icon {
+    color: #00D363;
+    margin-left: 8px;
+  }
+  
+  .cta-button {
+    background-color: #1cb561;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: IRANSans;
+    width: 285px;
+    padding: 17px 0;
+    margin: 0 auto;
+      margin-top: 0px;
+    font-size: 19px;
+    margin-top: 18px;
+    font-weight: 500;
+  }
+  
+  .cta-button:hover {
+    background-color: #00a850;
+  }
+  .heroo-section .Intro_details-bg {
+    background: -webkit-radial-gradient(100% 100%,100% 410.68%,rgba(0,0,0,0) 0,rgba(0,29,13,.54) 53.55%,rgba(0,0,0,0) 100%);
+    background: -moz-radial-gradient(100% 100%,100% 410.68%,rgba(0,0,0,0) 0,rgba(0,29,13,.54) 53.55%,rgba(0,0,0,0) 100%);
+    background: -o-radial-gradient(100% 100%,100% 410.68%,rgba(0,0,0,0) 0,rgba(0,29,13,.54) 53.55%,rgba(0,0,0,0) 100%);
+    background: radial-gradient(100% 410.68% at 100% 100%,rgba(0,0,0,0) 0,rgba(0,29,13,.54) 53.55%,rgba(0,0,0,0) 100%);
+    mix-blend-mode: color;
+  }
+  .heroo-section .d-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }

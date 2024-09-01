@@ -1,0 +1,312 @@
+.movie-container {
+  background: url("/public/images/bg-cinama.webp") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 50px 0;
+
+  .content-wrapper {
+    text-align: center;
+  }
+
+  .movie-title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .movie-features {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 0;
+    list-style: none;
+    direction: rtl;
+    gap: 92px;
+
+    .feature-item {
+      margin: 0 20px;
+      display: flex;
+      align-items: center;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 24px;
+      color: #d8d8d8;
+
+      .icon {
+        margin-left: 10px;
+        color: #00d363;
+      }
+    }
+  }
+
+  .movie-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid #33353d;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 10px 36px #00000040;
+    -moz-box-shadow: 0 10px 36px #00000040;
+    box-shadow: 0 10px 36px #00000040;
+    -webkit-backdrop-filter: blur(32px);
+    backdrop-filter: blur(32px);
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    padding: 10px;
+    min-width: 528px;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+    direction: rtl;
+
+    .card-body {
+      text-align: right;
+      margin-top: 3px;
+      justify-content: space-between;
+      gap: 22px;
+
+      .movie-director {
+        color: #ccc;
+        margin-bottom: 24px;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 12px;
+        line-height: 16px;
+        color: #d8d8d8;
+
+        span {
+          color: #fff;
+        }
+      }
+
+      .movie-genres {
+        .genre {
+          background: #444;
+          border-radius: 20px;
+          padding: 5px 10px;
+          margin-right: 10px;
+          color: #fff;
+        }
+      }
+
+      .btn-ticket {
+        display: inline-block;
+        background: none;
+        border: 2px solid #00d363;
+        padding: 10px 20px;
+        border-radius: 50px;
+        color: #00d363;
+        margin-top: 20px;
+        transition: background 0.3s, color 0.3s;
+
+        &:hover {
+          background: #00d363;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.movie-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .card-body {
+    flex: 1;
+    text-align: right;
+    margin-top: -13px;
+    justify-content: space-between;
+    gap: 22px;
+  }
+
+  .movie-poster {
+    width: 165px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .movie-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .movie-director {
+    font-size: 1rem;
+    color: #666;
+
+    span {
+      font-weight: 500;
+      color: #333;
+    }
+  }
+
+  .movie-genres {
+    margin-bottom: 10px;
+
+    .genre {
+      background-color: #00d363;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      margin-right: 5px;
+      font-size: 0.9rem;
+    }
+  }
+}
+.movie-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .movie-poster {
+    width: 36%;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-body {
+    flex: 1;
+    margin-right: 20px; // فاصله بین پوستر فیلم و متن‌ها
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; // برای فاصله‌گذاری بین محتوا
+    text-align: left;
+
+    .movie-name {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: #fff;
+      font-family: IRANSans;
+    }
+
+    .movie-director {
+      color: #666;
+      margin-bottom: 10px;
+
+      span {
+        font-weight: 500;
+        color: #333;
+      }
+    }
+
+    .movie-genres {
+      display: flex;
+      margin-top: 14px;
+
+      .genre {
+        background-color: #00d363;
+        color: white;
+        padding: 4px 8px;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+.online-box_detail .buy {
+  border: 1px solid #fff;
+  padding: 10px;
+  width: 70px;
+  cursor: pointer;
+  font-size: 11px;
+  margin-top: 10px;
+}
+.ui-br-8 {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+.ui-ml-3x {
+  margin-left: 12px;
+}
+a,
+a:active,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+a {
+  -webkit-transition-duration: 150ms;
+  -moz-transition-duration: 150ms;
+  -o-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-property: color, background-color, opacity;
+  -o-transition-property: color, background-color, opacity;
+  -moz-transition-property: color, background-color, opacity;
+  transition-property: color, background-color, opacity;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0 !important;
+}
+.d-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.ui-mb-6x {
+  margin-bottom: 24px;
+}
+.online-box_detail .category-name {
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 3px 10px;
+}
+.ui-ml-2x {
+  margin-left: 8px;
+}
+.movie-status {
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 4px 6px;
+    left: 25px;
+    fill: #fff;
+    font-size: 10px; /* افزودن فونت سایز 10 پیکسل */
+    position: absolute;
+  }
+  a, a:active, a:hover, a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+  .online-box_detail .buy:hover {
+    background-color: #151515;
+  }

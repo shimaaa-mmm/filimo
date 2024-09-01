@@ -1,0 +1,377 @@
+.js__switch_cat {
+  border: 1px solid #ffffff1f;
+  border-radius: 35px;
+  padding: 1px 1px;
+  display: flex;
+
+  .category-btn {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 0 8px;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: background 0.3s, color 0.3s;
+
+    &.active_s {
+      background: rgba(255, 255, 255, 0.12);
+      font-weight: 700;
+      padding: 0 13px 0 11px;
+    }
+
+    &:not(.active_s) {
+      font-weight: 500;
+    }
+  }
+
+  // Apply exact margin if needed
+  margin-left: 10px;
+}
+.image-container {
+  position: relative;
+  width: 190px;
+  height: 250px; // Adjust the height if needed
+
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; // Ensure the SVG fits within the container
+    pointer-events: none; // Allow clicks to pass through
+  }
+}
+.image-container {
+  position: relative;
+  width: 190px;
+  height: auto;
+
+  .gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(30.31%, rgba(0, 0, 0, 0)),
+      color-stop(90.92%, rgba(0, 0, 0, 0.85))
+    );
+    background: -webkit-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0) 30.31%,
+      rgba(0, 0, 0, 0.85) 90.92%
+    );
+    background: -moz-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0) 30.31%,
+      rgba(0, 0, 0, 0.85) 90.92%
+    );
+    background: -o-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0) 30.31%,
+      rgba(0, 0, 0, 0.85) 90.92%
+    );
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 30.31%,
+      rgba(0, 0, 0, 0.85) 90.92%
+    );
+    border-radius: 6px;
+    pointer-events: none; // Allow clicks to pass through
+  }
+
+  img {
+    border-radius: 6px;
+  }
+}
+.image-container {
+  position: relative;
+  overflow: hidden; // Ensure the gradient overlay is contained within the image
+
+  img {
+    transition: opacity 0.3s ease; // Smooth transition for opacity change
+    opacity: 0.7; // Initial opacity (dark)
+    border-radius: 8px; // Optional: rounded corners
+    width: 190px; // Ensure the width matches your inline style
+    height: auto; // Maintain aspect ratio
+    object-fit: cover; // Ensure the image covers the container
+  }
+
+  img:hover {
+    opacity: 1; // Change opacity to full brightness on hover
+  }
+
+  .gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); // Optional: dark overlay
+    transition: opacity 0.3s ease;
+    opacity: 0; // Initial opacity (hidden)
+  }
+
+  &:hover .gradient-overlay {
+    opacity: 1; // Show the gradient overlay on hover
+  }
+}
+.js__switch_cat {
+  .category-btn {
+    -webkit-transition-duration: 150ms;
+    -moz-transition-duration: 150ms;
+    -o-transition-duration: 150ms;
+    transition-duration: 150ms;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transition-property: color, background-color, opacity;
+    -o-transition-property: color, background-color, opacity;
+    -moz-transition-property: color, background-color, opacity;
+    transition-property: color, background-color, opacity;
+  }
+
+  .category-btn.active_s {
+    color: #00d363; // Adjust the active button color if needed
+    background-color: #fff; // Adjust the active button background color if needed
+  }
+
+  .category-btn:hover {
+    color: #00d363; // Adjust the hover color if needed
+    background-color: #f8f9fa; // Adjust the hover background color if needed
+  }
+}
+//section-2////
+.right-section .movie-title {
+  
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.right-section .director{
+  font-weight: 100;
+  font-size: 13px;
+  line-height: 12px;
+  color: #a1a1a1;
+  margin-bottom: 22px;
+  font-family: IRANSans;
+    // margin-bottom: 24px;
+}
+.main-section {
+  position: relative;
+  background: radial-gradient(
+      circle,
+      rgba(21, 21, 21, 0.5) 0%,
+      rgba(21, 21, 21, 0.9) 80%
+    ),
+    url("/./public/images/mov_cvr_filimo_hor_148098_727.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0 0 85px;
+  color: white; /* برای اطمینان از خوانایی متن */
+  z-index: 5;
+}
+.movie-gradient2 {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(2%, #151515),
+    color-stop(10%, rgba(21, 21, 21, 0))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    #151515 2%,
+    rgba(21, 21, 21, 0) 10%
+  );
+  background: -moz-linear-gradient(left, #151515 2%, rgba(21, 21, 21, 0) 10%);
+  background: -o-linear-gradient(left, #151515 2%, rgba(21, 21, 21, 0) 10%);
+  background: linear-gradient(90deg, #151515 2%, rgba(21, 21, 21, 0) 10%);
+}
+.d-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.movie-gradient {
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    color-stop(15%, #151515),
+    to(rgba(21, 21, 21, 0))
+  );
+  background: -webkit-linear-gradient(
+    right,
+    #151515 15%,
+    rgba(21, 21, 21, 0) 100%
+  );
+  background: -moz-linear-gradient(
+    right,
+    #151515 15%,
+    rgba(21, 21, 21, 0) 100%
+  );
+  background: -o-linear-gradient(right, #151515 15%, rgba(21, 21, 21, 0) 100%);
+  background: linear-gradient(270deg, #151515 15%, rgba(21, 21, 21, 0) 100%);
+}
+.d-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.movie-detail {
+  z-index: 5;
+  padding: 10px 0 85px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(4%, #151515),
+    color-stop(45%, rgba(21, 21, 21, 0))
+  );
+  background: -webkit-linear-gradient(top, #151515 4%, rgba(21, 21, 21, 0) 45%);
+  background: -moz-linear-gradient(top, #151515 4%, rgba(21, 21, 21, 0) 45%);
+  background: -o-linear-gradient(top, #151515 4%, rgba(21, 21, 21, 0) 45%);
+  background: linear-gradient(180deg, #151515 4%, rgba(21, 21, 21, 0) 45%);
+}
+.ps-relative {
+  position: relative;
+}
+.tag-item {
+  text-align: center;
+  background: rgba(255,196,60,.12);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 3px 7px;
+}
+.movie-detail_top-right .discription {
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 26px;
+  max-width: 708px;
+  max-height: 100px;
+  overflow-y: auto;
+}
+.truncate {
+  max-width: 100%;
+  overflow: hidden;
+    overflow-y: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ui-mb-6x {
+  margin-top: 24px;
+}
+a, a:active, a:hover, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+.BTN_sub {
+  background-color: #1cb561;
+  color: #fff !important;
+  fill: #fff;
+  padding: 10px 16px;
+  width: 260px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.ui-btn, .ui-transition {
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+.ui-ai-c {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.ui-jc-c {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.d-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.ui-mb-6x {
+  margin-bottom: 24px;
+}
+.additional-info{
+  font-family: IRANSans;
+  font-weight: 400;
+  direction: rtl;
+  font-size: 12px;
+}
+.logo-movie img {
+  max-width: 220px;
+  max-height: 190px;
+  margin-left: 57px;
+  margin-top: -94px;
+}
+////paltooo////
+.palto-section {
+  position: relative;
+  background: radial-gradient(
+      circle,
+      rgba(21, 21, 21, 0.5) 0%,
+      rgba(21, 21, 21, 0.9) 80%
+    ),
+    url("/./public/images/palto.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 0 0 85px;
+  color: white; /* برای اطمینان از خوانایی متن */
+  z-index: 5;
+}
+.inner-wrapper {
+  width: 1156px;
+  padding: 0 3px;
+}
+.sheshom-section{
+  position: relative;
+  background: radial-gradient(
+      circle,
+      rgba(21, 21, 21, 0.5) 0%,
+      rgba(21, 21, 21, 0.9) 80%
+    ),
+    url("/./public/images/sheshom.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 0 0 85px;
+  color: white; /* برای اطمینان از خوانایی متن */
+  z-index: 5;
+}
